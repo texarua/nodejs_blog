@@ -2,10 +2,10 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "src/template_engine/index.js",
+  "main": "src/query_param/index.js",
   "scripts": {
-    "start": "nodemon --inspect src/template_engine/index.js",
-    "watch": "node-sass --watch src/template_engine/resources/scss --output src/template_engine/public/css",
+    "start": "nodemon --inspect src/query_param/index.js",
+    "watch": "node-sass --watch src/query_param/resources/scss --output src/query_param/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
