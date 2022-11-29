@@ -2,10 +2,10 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "src/query_param/index.js",
+  "main": "src/mvc_nodejs/resources/index.js",
   "scripts": {
-    "start": "nodemon --inspect src/query_param/index.js",
-    "watch": "node-sass --watch src/query_param/resources/scss --output src/query_param/public/css",
+    "start": "nodemon --inspect src/mvc_nodejs/resources/index.js",
+    "watch": "node-sass --watch src/mvc_nodejs/resources/scss --output src/mvc_nodejs/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
