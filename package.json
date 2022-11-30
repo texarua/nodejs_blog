@@ -4,9 +4,18 @@
   "description": "",
   "main": "src/mvc_nodejs/resources/index.js",
   "scripts": {
+    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/mvc_nodejs/resources/index.js",
     "watch": "node-sass --watch src/mvc_nodejs/resources/scss --output src/mvc_nodejs/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "src/**/**/*.{js,json,css,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
@@ -28,8 +37,11 @@
     "express-handlebars": "^6.0.6"
   },
   "devDependencies": {
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
     "morgan": "^1.10.0",
     "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.0"
   }
 }
