@@ -16,10 +16,10 @@ app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'resources/views'));
 
-app.get('/trang-chu', (req, res) => { 
-    res.render('home')
+app.get('/trang-chu', (req, res) => {
+    res.render('home');
 });
 
 app.listen(port, () => {
     console.log(`Example app listening at http://phu-nodejs.com:${port}`);
-})
+});

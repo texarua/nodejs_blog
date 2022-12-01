@@ -12,9 +12,11 @@ app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public/')));
 
 //middleware : handle data send by form data with method post
-app.use(express.urlencoded({
-    extended: true
-}));
+app.use(
+    express.urlencoded({
+        extended: true,
+    }),
+);
 app.use(express.json());
 
 // template engine
@@ -22,20 +24,20 @@ app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'resources/views'));
 
-app.get('/trang-chu', (req, res) => { 
-    res.render('home')
+app.get('/trang-chu', (req, res) => {
+    res.render('home');
 });
 
 app.get('/search', (req, res) => {
-    console.log(req)
+    console.log(req);
     res.render('search');
-})
+});
 
 app.post('/search', (req, res) => {
-    console.log(req.body)
+    console.log(req.body);
     res.render('search');
-})
+});
 
 app.listen(port, () => {
     console.log(`Example app listening at http://phu-nodejs.com:${port}`);
-})
+});
