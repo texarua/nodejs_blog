@@ -2,11 +2,11 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "src/mvc_nodejs/resources/index.js",
+  "main": "src/mvc_model/resources/index.js",
   "scripts": {
     "beautiful": "lint-staged",
-    "start": "nodemon --inspect src/mvc_nodejs/resources/index.js",
-    "watch": "node-sass --watch src/mvc_nodejs/resources/scss --output src/mvc_nodejs/public/css",
+    "start": "nodemon --inspect src/mvc_model/resources/index.js",
+    "watch": "node-sass --watch src/mvc_model/resources/scss --output src/mvc_model/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
@@ -34,7 +34,8 @@
   "homepage": "https://github.com/texarua/nodejs_blog#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^6.0.6"
+    "express-handlebars": "^6.0.6",
+    "mongoose": "^6.7.5"
   },
   "devDependencies": {
     "husky": "^4.3.8",
