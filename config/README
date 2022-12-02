@@ -1,0 +1,26 @@
+To install the Sequelize CLI:
+npm install --save-dev sequelize-cli
+
+install structure sequelize like laravel
+npx sequelize-cli init
+
+create model
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+running migration
+npx sequelize-cli db:migrate
+
+undo migration
+npx sequelize-cli db:migrate:undo
+
+revert migration to path
+npx sequelize-cli db:migrate:undo:all --to XXXXXXXXXXXXXX-create-posts.js
+
+
+create seeder
+npx sequelize-cli seed:generate --name demo-user
+
+Edit database
+npx sequelize-cli migration:generate --name migration-skeleton
+
+

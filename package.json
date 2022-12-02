@@ -2,11 +2,11 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "src/mvc_model/resources/index.js",
+  "main": "src/sequelize_nodejs/resources/index.js",
   "scripts": {
     "beautiful": "lint-staged",
-    "start": "nodemon --inspect src/mvc_model/resources/index.js",
-    "watch": "node-sass --watch src/mvc_model/resources/scss --output src/mvc_model/public/css",
+    "start": "nodemon --inspect src/sequelize_nodejs/resources/index.js",
+    "watch": "node-sass --watch src/sequelize_nodejs/resources/scss --output src/sequelize_nodejs/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
@@ -35,7 +35,9 @@
   "dependencies": {
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
-    "mongoose": "^6.7.5"
+    "mongoose": "^6.7.5",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0"
   },
   "devDependencies": {
     "husky": "^4.3.8",
@@ -43,6 +45,7 @@
     "morgan": "^1.10.0",
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.0",
+    "sequelize-cli": "^6.5.2"
   }
 }

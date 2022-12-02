@@ -9,10 +9,6 @@ const port = 3000;
 const route = require('./routes');
 route(app);
 
-//declare database
-const db = require('./config/db/mysql');
-db.connect();
-
 //http logger
 app.use(morgan('combined'));
 
